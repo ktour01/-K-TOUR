@@ -1,0 +1,6 @@
+{
+  "name": "K-TOUR Golf Travel",
+  "description": "대한민국 No.1 골프 예약 파트너, 케이투어(K-TOUR) - 매일 다른 그린을 밟는 설렘",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
