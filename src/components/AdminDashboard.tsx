@@ -55,7 +55,7 @@ export default function AdminDashboard({
   const handleSetupSms = (booking: Booking) => {
     setShowSmsModal(booking);
     setSmsMessageText(
-      `[K-TOUR 알림톡]\n\n안녕하세요 ${booking.customerName} 고객님, 대한민국 환상 골프 파트너 케이투어입니다.\n신청해주신 [${booking.productTitle}]에 관한 예약 가예약 신청이 정상 접수되었습니다.\n\n■ 신청일수: ${booking.preferredDate}\n■ 동반인원: ${booking.pax}인\n현재 예약 전담 디렉터가 골프장 코스 티타임 확보 검토를 완료했습니다. 10분 내로 유선 상담(해피콜) 주도하겠습니다.\n\n문의: 010-7310-9078`
+      `[K-TOUR 알림톡]\n\n안녕하세요 ${booking.customerName} 고객님, 대한민국 환상 골프 파트너 케이투어입니다.\n신청해주신 [${booking.productTitle}]에 관한 예약 가예약 신청이 정상 접수되었습니다.\n\n■ 신청일수: ${booking.preferredDate}\n■ 동반인원: ${booking.pax}인\n현재 예약 전담 디렉터가 골프장 코스 티타임 확보 검토를 완료했습니다. 10분 내로 유선 상담(해피콜) 주도하겠습니다.\n\n문의: 박준희 이사 010-8060-4004 / 박용재 부장 010-7310-9078 / 황희진 차장 010-9982-0673`
     );
   };
 
@@ -169,7 +169,7 @@ export default function AdminDashboard({
 
             <div className="space-y-4">
               <p className="text-xs text-slate-400 leading-relaxed">
-                🚨 **알림 기능 데모**: 새로운 고객 예약 신청이 홈페이지 프론트 상에서 발수되는 즉시, K-TOUR 관리자의 KakaoTalk (비즈니스 채널 계정 <strong>010-7310-9078</strong>) 혹은 헬프 번호로 아래의 템플릿 메세지가 자동 발신 처리됩니다.
+                🚨 **알림 기능 데모**: 새로운 고객 예약 신청이 홈페이지 프론트 상에서 발송되는 즉시, K-TOUR 관리자의 KakaoTalk (<strong>박준희 이사 010-8060-4004 / 박용재 부장 010-7310-9078 / 황희진 차장 010-9982-0673</strong>) 혹은 헬프 번호로 아래의 템플릿 메세지가 자동 발신 처리됩니다.
               </p>
 
               {/* Chat log visual list */}

@@ -395,6 +395,20 @@ export default function BookingForm({ product, onClose, onSubmitBooking }: Booki
                   />
                 </div>
 
+                {/* Official Bank Account Block */}
+                <div className="p-3.5 bg-slate-50 rounded-2xl border border-slate-200/80 text-left space-y-1.5">
+                  <p className="text-[11px] font-bold text-slate-800 flex items-center space-x-1.5">
+                    <span className="w-1.5 h-1.5 bg-emerald-600 rounded-full"></span>
+                    <span>예약 확정 입금인 전용 계좌안내</span>
+                  </p>
+                  <p className="text-xs font-extrabold text-slate-900 leading-tight select-all font-sans">
+                    NH농협은행 351-1329-2852-73
+                  </p>
+                  <p className="text-[10px] text-slate-500 font-medium leading-none">
+                    예금주: 박준희(케이투어K-TOUR)
+                  </p>
+                </div>
+
                 {/* Aggrement compliance block */}
                 <div className="p-3 bg-emerald-50 rounded-xl text-emerald-800 text-[10px] leading-relaxed border border-emerald-150">
                   ℹ️ 국내외 여행업 규정에 맞춘 개인정보 취급 및 제공에 자동 동의하며, 접수와 동시에 담당 디렉터의 무료 매칭 카운슬링이 개시됩니다.

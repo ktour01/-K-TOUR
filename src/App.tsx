@@ -253,11 +253,17 @@ export default function App() {
                     <button
                       onClick={() => {
                         setActiveFilterOverride('골프조인');
-                        scrollToCatalog();
+                        const joinProduct = GOLF_PRODUCTS.find(p => p.id === 'join-matching-pax2');
+                        if (joinProduct) {
+                          setSelectedProduct(joinProduct);
+                        } else {
+                          scrollToCatalog();
+                        }
                       }}
                       className="cursor-pointer px-4.5 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 rounded-xl text-xs font-extrabold border border-emerald-200 shadow-sm flex items-center space-x-1"
+                      title="2인 골프 조인 신청서 즉시 작성하기"
                     >
-                      <span>⛳ [⛳ 조인/초보 환영]</span>
+                      <span>🤝 [2인골프 조인방/2인골프 조인신청]</span>
                     </button>
                   </div>
 

@@ -1,6 +1,25 @@
 import { Product, BlogReview, Booking } from './types.ts';
 
 export const GOLF_PRODUCTS: Product[] = [
+  // 2-Pax Golf Join Specialist Service Product
+  {
+    id: 'join-matching-pax2',
+    category: 'domestic',
+    subCategory: '전국 공통',
+    badge: '골프조인',
+    title: '[2인골프 조인방] 실시간 전국 2인 골프 조인 및 동반자 즉시 매칭 신청',
+    description: '동반자 2인 예약도 부담 없이! 케이투어 베테랑 매칭 전담팀이 최적의 시간과 코스로 2인 조인을 완수해 드립니다.',
+    priceText: '실시간 상담 ~',
+    image: 'https://images.unsplash.com/photo-1544426543-98319ee0b3b4?q=80&w=600&auto=format&fit=crop',
+    duration: '전지역 가능',
+    highlights: [
+      '2인 플레이 예약자 혹은 부부 골퍼를 위한 1:1 맞춤형 조인 매칭 서비스',
+      '동반 연령대, 타수(실력), 선호 구장에 합치되는 최적의 매칭 스크리닝 진행',
+      '초보 골퍼부터 싱글 플레이어까지 누구든 부담없이 신청 및 어색함 없는 동반 라운딩 설계'
+    ],
+    hotelName: '원하는 골프장 제휴 골프텔/숙소 연계 가능 (선택제)',
+    meals: '해당 골프장 식사 포함 여부 유선 맞춤 상담 제공'
+  },
   // Overseas
   {
     id: 'ovs-chiangmai',

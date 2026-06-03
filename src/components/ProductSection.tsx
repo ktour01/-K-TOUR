@@ -195,11 +195,11 @@ export default function ProductSection({ onSelectProduct, activeFilterOverride }
                 className={`px-4 py-2.5 rounded-xl border text-xs sm:text-sm font-bold cursor-pointer flex items-center space-x-1.5 transition-all ${
                   themeFilter === '골프조인'
                     ? 'bg-teal-600 text-white border-teal-600 shadow-md shadow-teal-600/10'
-                    : 'bg-teal-50/50 text-teal-850 border-teal-200 hover:bg-teal-100/60'
+                    : 'bg-teal-50/50 text-teal-850 border-teal-200 hover:bg-teal-150'
                 }`}
               >
                 <CalendarCheck className="w-4 h-4" />
-                <span>[⛳ 골프 조인/초보 환영]</span>
+                <span>[🤝 2인골프 조인방/2인골프 조인신청]</span>
               </button>
             </div>
           </div>
@@ -283,7 +283,7 @@ export default function ProductSection({ onSelectProduct, activeFilterOverride }
                           ? 'bg-amber-500 text-slate-950 border-amber-400'
                           : 'bg-emerald-600 text-white border-emerald-500'
                       }`}>
-                        {product.badge === '긴급마감' ? '🚨 긴급마감' : product.badge === '2인출발' ? '👥 2인출발' : '⛳ 골프조인'}
+                        {product.badge === '긴급마감' ? '🚨 긴급마감' : product.badge === '2인출발' ? '👥 2인출발' : '🤝 2인조인'}
                       </span>
                     </div>
                   )}

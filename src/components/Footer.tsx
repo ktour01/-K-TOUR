@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center border-b border-slate-800/80">
         
         {/* Brand visual column */}
-        <div className="md:col-span-5 space-y-3">
+        <div className="md:col-span-4 space-y-3">
           <div className="flex items-center space-x-2.5">
             <div className="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center text-white font-bold font-sans text-sm shadow">
               KT
@@ -26,14 +26,39 @@ export default function Footer() {
         </div>
 
         {/* Highlight contact particulars block */}
-        <div className="md:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="flex items-start space-x-2.5 text-xs">
             <Phone className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
             <div>
-              <p className="text-slate-300 font-bold block mb-0.5">고객센터문의</p>
-              <p className="text-slate-200 font-extrabold font-mono text-base">010-7310-9078</p>
+              <p className="text-slate-300 font-bold block mb-1.5">고객센터문의</p>
+              <div className="space-y-1">
+                <p className="text-slate-200 text-sm leading-tight">
+                  <span className="text-slate-400 font-medium">박준희 이사</span>{" "}
+                  <span className="font-bold font-mono text-slate-100 select-all">010-8060-4004</span>
+                </p>
+                <p className="text-slate-200 text-sm leading-tight">
+                  <span className="text-slate-400 font-medium">박용재 부장</span>{" "}
+                  <span className="font-bold font-mono text-slate-100 select-all">010-7310-9078</span>
+                </p>
+                <p className="text-slate-200 text-sm leading-tight">
+                  <span className="text-slate-400 font-medium">황희진 차장</span>{" "}
+                  <span className="font-bold font-mono text-slate-100 select-all">010-9982-0673</span>
+                </p>
+              </div>
             </div>
           </div>
+          
+          <div className="flex items-start space-x-2.5 text-xs">
+            <div className="w-4 h-4 rounded-sm bg-slate-800 border border-slate-700 text-emerald-400 flex items-center justify-center flex-shrink-0 text-[10px] font-bold mt-0.5 select-none">
+              ₩
+            </div>
+            <div>
+              <p className="text-slate-300 font-bold block mb-1">예약금 입금계좌</p>
+              <p className="text-slate-100 font-extrabold font-sans text-[11px] leading-tight select-all">NH농협 351-1329-2852-73</p>
+              <p className="text-[10px] text-slate-400 mt-0.5 leading-tight">예금주: 박준희(케이투어K-TOUR)</p>
+            </div>
+          </div>
+
           <div className="flex items-start space-x-2.5 text-xs">
             <Clock className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
             <div>
@@ -45,14 +70,13 @@ export default function Footer() {
         </div>
 
         {/* Scroll back to top column */}
-        <div className="md:col-span-2 flex justify-end">
+        <div className="md:col-span-1 flex justify-end">
           <button
             onClick={scrollToTop}
-            className="cursor-pointer p-3 bg-slate-800 hover:bg-slate-700 hover:text-white rounded-xl border border-slate-750 transition-colors flex items-center space-x-1.5 text-xs font-bold font-sans shadow"
+            className="cursor-pointer p-3 bg-slate-800 hover:bg-slate-700 hover:text-white rounded-xl border border-slate-750 transition-colors flex items-center justify-center shadow"
             title="맨 앞으로 가기"
           >
-            <span>상단이동</span>
-            <ArrowUp className="w-3.5 h-3.5" />
+            <ArrowUp className="w-4 h-4" />
           </button>
         </div>
 

@@ -3,7 +3,7 @@
 
 @theme {
   --font-sans: "Noto Sans KR", "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-mono: "Malgun Gothic", "맑은 고딕", "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
 /* Custom golf-green styles and layouts */
